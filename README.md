@@ -8,7 +8,6 @@ Installation
 
 - git clone
 - npm install
-- bower install
 
 
 Playing
