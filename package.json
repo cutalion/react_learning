@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "dependencies": {
     "jsx-loader": "~0.12.2",
-    "webpack": "~1.7.3"
+    "webpack": "~1.7.3",
+    "expose-loader": "~0.6.0"
   },
   "devDependencies": {},
   "scripts": {

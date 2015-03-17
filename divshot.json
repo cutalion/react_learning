@@ -1,0 +1,11 @@
+{
+  "name": "react-learning",
+  "root": "",
+  "clean_urls": true,
+  "error_page": "error.html",
+  "exclude": [
+    "bower.json", "node_modules", "bower_components", "src",
+    "webpack", "package.json"
+  ]
+}
+

@@ -8,7 +8,7 @@ var config = {
   },
 
   output: {
-    path: __dirname + "/dist",
+    path: __dirname + "/assets/javascripts",
     filename: "[name].js",
   },
 
@@ -21,17 +21,19 @@ var config = {
 
   resolve: {
     extensions: ['', '.js', '.jsx'],
-    modulesDirectories: ['src']
-  },
-
-  externals: {
-    react: 'React'
+    modulesDirectories: ['src', 'bower_components', 'node_modules']
   },
 
   plugins: [
     new webpack.ResolverPlugin(
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
-    )
+    ),
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "windows.jQuery": "jquery",
+        React: 'react'
+    })
   ]
 };
 
