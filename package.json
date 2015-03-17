@@ -1,0 +1,23 @@
+{
+  "name": "react_learning",
+  "version": "0.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "jsx-loader": "~0.12.2",
+    "webpack": "~1.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cutalion/react_learning.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/cutalion/react_learning/issues"
+  }
+}
