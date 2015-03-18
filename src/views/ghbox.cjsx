@@ -1,13 +1,11 @@
-var GHSearch = require('ghsearch')
-var GHUser   = require('ghuser')
+GHSearch = require('ghsearch')
+GHUser   = require('ghuser')
 
-module.exports = {
-  render: function(component){
+module.exports =
+  render: (component) ->
     return (
       <div>
         <GHSearch onSearch={component.searchUser} />
         <GHUser user={component.state.user} />
       </div>
     )
-  }
-}

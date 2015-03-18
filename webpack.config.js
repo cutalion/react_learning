@@ -13,14 +13,24 @@ var config = {
   },
 
   module: {
-    loaders: [{
-      test: /\.jsx$/,
-      loader: 'jsx-loader?insertPragma=React.DOM&harmony'
-    }]
+    loaders: [
+      {
+        test: /\.jsx$/,
+        loader: 'jsx-loader?insertPragma=React.DOM&harmony'
+      },
+      {
+        test: /\.coffee$/,
+        loader: 'coffee'
+      },
+      {
+        test: /\.cjsx$/,
+        loaders: ['coffee', 'cjsx']
+      }
+    ]
   },
 
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js', '.jsx', '.coffee', '.cjsx'],
     modulesDirectories: ['src', 'bower_components', 'node_modules']
   },
 

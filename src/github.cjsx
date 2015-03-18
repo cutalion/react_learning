@@ -1,5 +1,5 @@
-var GHBox = require('ghbox');
+GHBox = require('ghbox')
 
 React.render(
   <GHBox />, document.getElementById('example')
-);
+)
