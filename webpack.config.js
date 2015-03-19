@@ -4,7 +4,7 @@ var config = {
   context: __dirname,
 
   entry: {
-    github: "./src/application"
+    github: "./assets/javascripts/application"
   },
 
   output: {
@@ -31,7 +31,7 @@ var config = {
 
   resolve: {
     extensions: ['', '.js', '.jsx', '.coffee', '.cjsx'],
-    modulesDirectories: ['src', 'bower_components', 'node_modules']
+    modulesDirectories: ['assets/javascripts', 'bower_components', 'node_modules']
   },
 
   plugins: [
