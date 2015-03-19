@@ -1,4 +1,4 @@
-View = require('./views/ghbox')
+View = require('./views/profiles')
 
 module.exports = React.createClass
   getInitialState: ->

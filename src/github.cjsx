@@ -1,5 +1,5 @@
-GHBox = require('ghbox')
+Profiles = require('profiles')
 
 React.render(
-  <GHBox />, document.getElementById('example')
+  <Profiles />, document.getElementById('example')
 )
