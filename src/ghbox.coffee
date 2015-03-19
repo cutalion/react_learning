@@ -2,10 +2,12 @@ View = require('./views/ghbox')
 
 module.exports = React.createClass
   getInitialState: ->
-    user: null
+    ghuser: null
+    twiuser: null
 
   render: ->
     View.render(this)
 
-  searchUser: (json) ->
-    this.setState({user: json})
+  searchUser: (user, from) ->
+    this.setState({ghuser: user}) if from == 'github'
+    this.setState({twiuser: user}) if from == 'twitter'

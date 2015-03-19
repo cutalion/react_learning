@@ -1,11 +1,13 @@
-GHSearch = require('ghsearch')
-GHUser   = require('ghuser')
+Search  = require('search')
+GHUser  = require('ghuser')
+TWIUser = require('twiuser')
 
 module.exports =
   render: (component) ->
     return (
       <div>
-        <GHSearch onSearch={component.searchUser} />
-        <GHUser user={component.state.user} />
+        <Search onSearch={component.searchUser} />
+        <GHUser user={component.state.ghuser} />
+        <TWIUser user={component.state.twiuser} />
       </div>
     )
