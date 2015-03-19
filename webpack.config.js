@@ -4,7 +4,7 @@ var config = {
   context: __dirname,
 
   entry: {
-    github: "./src/github"
+    github: "./src/application"
   },
 
   output: {

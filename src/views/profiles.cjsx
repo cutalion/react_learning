@@ -1,6 +1,6 @@
-Search  = require('search')
-GHUser  = require('ghuser')
-TWIUser = require('twiuser')
+Search  = require('components/search')
+GHUser  = require('components/ghuser')
+TWIUser = require('components/twiuser')
 
 module.exports =
   render: (component) ->
